@@ -195,6 +195,9 @@ int main( int argc, char* argv[] )
 
 			break;
 
+		case eEND:
+			break;
+
 		default:
 			break;
 		}
