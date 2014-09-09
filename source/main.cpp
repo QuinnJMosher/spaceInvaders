@@ -5,7 +5,7 @@
 const int iScreenWidth = 672;
 const int iScreenHeight = 780;
 
-const float SPEED = 150.0f;
+const float SPEED = 300.0f;
 const float ENEMY_SPEED = 0.125f;
 const float ENEMY_SPEED_DOWN = 2.5f;
 
@@ -245,6 +245,7 @@ void UpdateGameState(float deltaTime) {
 	DrawString("HI-SCORE", iScreenWidth * 0.35f, iScreenHeight - 2);
 	DrawString("0020", iScreenWidth * (0.05f + 0.35f), iScreenHeight - 32);
 	DrawString("SCORE < 2 >", iScreenWidth * 0.65f, iScreenHeight - 2);
+	DrawString("0000", iScreenWidth * (0.05f + 0.65f), iScreenHeight - 32);
 }
 
 void CreateEnemies() {
@@ -293,7 +294,7 @@ void MoveEnemies(int deltaTime) {
 			if (alienShips[i][j].Move(deltaTime, enemyDirection)) {//if something hits a wall it will Return true
 			changeDirection = true;// this will allow the direction to change after all enemies have moved
 			}
-			MoveSprite(alienShips[i][j].iSpriteID, alienShips[i][j].x, alienShips[i][j].y);//commit sptie movement (multiple returns in move meathod make it easier to have this live here instaead)
+			MoveSprite(alienShips[i][j].iSpriteID, alienShips[i][j].x, alienShips[i][j].y);//commit sprtie movement (multiple returns in move meathod make it easier to have this live here instaead)
 
 		}
 	}
