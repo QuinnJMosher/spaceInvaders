@@ -6,7 +6,7 @@ const int iScreenWidth = 672;
 const int iScreenHeight = 780;
 
 const float SPEED = 150.0f;
-const float ENEMY_SPEED = 0.25f;
+const float ENEMY_SPEED = 0.125f;
 const float ENEMY_SPEED_DOWN = 2.5f;
 
 const int enemyArr1Length = 4;
@@ -110,12 +110,12 @@ struct Enemy {
 
 		if (direction == eLEFT) {//check for direction moved
 			x -= (ENEMY_SPEED);
-			if (x < 0) {//check if screen edge is reached
+			if (x < 0.0f + 32.0f) {//check if screen edge is reached
 				return true;//if we hit a wall then we need to complain about it;
 			}
 		} else if (direction == eRIGHT) {
 			x += (ENEMY_SPEED);
-			if (x > iScreenWidth) {
+			if (x > (iScreenWidth - 32.0f)) {
 				return true;
 			}
 		}
