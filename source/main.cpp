@@ -1,5 +1,7 @@
 ﻿#include "AIE.h"
 #include <iostream>
+#include "PlayerCannon.h"
+#include "Enemy.h"
 
 //constants
 const int iScreenWidth = 672;
@@ -38,97 +40,11 @@ enum GAMESTATES
 //sprite vars
 unsigned int iArcadeMarquee;
 
-//playerStrct
-struct PlayerCannon {
-	unsigned int iSpriteID;
-
-	float fWidth;
-	float fHeight;
-	void SetSize(float inWidth, float inHeight) {
-		fWidth = inWidth;
-		fHeight = inHeight;
-	}
-
-	float x;
-	float y;
-	void SetPosition(float inX, float inY) {
-		x = inX;
-		y = inY;
-	}
-
-	unsigned int iMoveLeftKey;
-	unsigned int iMoveRightKey;
-	void SetMovementKeys(unsigned int inMoveLeft, unsigned int inMoveRight) {
-		iMoveLeftKey = inMoveLeft;
-		iMoveRightKey = inMoveRight;
-	}
-
-	unsigned int iLeftMovementExtreme;
-	unsigned int iRightMovementExtreme;
-	void SetMovementExtremes(unsigned int inLeftExtreme, unsigned int inRightExtreme) {
-		iLeftMovementExtreme = inLeftExtreme;
-		iRightMovementExtreme = inRightExtreme;
-	}
-
-	void Move(float fTimeStep, float fSpeed)
-	{
-		if (IsKeyDown(iMoveLeftKey))//check if key is down
-		{
-			x -= (fTimeStep * fSpeed);//move based on the speed of the computer
-			if (x < (iLeftMovementExtreme + fWidth * .5f))//check for edge of screen
-			{
-				x = (iLeftMovementExtreme + fWidth * .5f);//if edge reached then prevent from going off screen
-			}
-		}
-
-		if (IsKeyDown(iMoveRightKey))
-		{
-			x += (fTimeStep * fSpeed);
-			if (x >(iRightMovementExtreme - fWidth * .5f))
-			{
-				x = (iRightMovementExtreme - fWidth * .5f);
-			}
-		}
-
-		MoveSprite(iSpriteID, x, y);//finalize movement
-	}
-};
-
 enum DIRECTION {//values for the direction that the enimies are moveing
 	eLEFT,
 	eRIGHT,
 	eDOWN
 };
-
-struct Enemy {
-	unsigned int iSpriteID;
-
-	float x;
-	float y;
-
-	bool Move(float fDeltaTime, int direction) {
-
-		if (direction == eLEFT) {//check for direction moved
-			x -= (ENEMY_SPEED);
-			if (x < 0.0f + 32.0f) {//check if screen edge is reached
-				return true;//if we hit a wall then we need to complain about it;
-			}
-		} else if (direction == eRIGHT) {
-			x += (ENEMY_SPEED);
-			if (x > (iScreenWidth - 32.0f)) {
-				return true;
-			}
-		}
-		else if (direction == eDOWN) {
-			y -= ENEMY_SPEED_DOWN;
-			return true;//we dont need to track if we hit a wall going down because we will only ever move down once
-		}
-
-		return false;//if we dont hit any walls or move downward the we are fine
-	}
-
-};
-
 
 DIRECTION enemyDirection;
 DIRECTION nextDirection;

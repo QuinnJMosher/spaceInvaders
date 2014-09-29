@@ -1,25 +1,27 @@
-﻿Build started 9/10/2014 9:19:31 AM.
+﻿Build started 9/24/2014 9:43:41 AM.
      1>Project "C:\Users\quinn.mosher\Documents\GitHub\spaceInvaders\AIE Template.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /I./include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\\" /Fd"obj\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt source\main.cpp
          main.cpp
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(149): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(150): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(223): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(224): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(231): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(246): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(247): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(248): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(249): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(250): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(251): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
-     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(297): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(65): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(66): warning C4244: 'argument' : conversion from 'float' to 'unsigned int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(139): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(140): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(147): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(162): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(163): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(164): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(165): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(166): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(167): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\quinn.mosher\documents\github\spaceinvaders\source\main.cpp(213): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\AIE Template_d.exe" /INCREMENTAL /NOLOGO /LIBPATH:./libs AIE_1st_Year_Framework_d.lib kernel32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\AIE Template_d.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"bin\AIE Template_d.lib" /MACHINE:X86 obj\main.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\AIE Template_d.exe" /INCREMENTAL /NOLOGO /LIBPATH:./libs AIE_1st_Year_Framework_d.lib kernel32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"bin\AIE Template_d.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"bin\AIE Template_d.lib" /MACHINE:X86 obj\Enemy.obj
+         obj\main.obj
+         obj\PlayerCannon.obj
          AIE_1st_Year_Framework_d.lib(SOIL.obj) : MSIL .netmodule or module compiled with /GL found; restarting link with /LTCG; add /LTCG to the link command line to improve linker performance
      1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
-     1>main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>Enemy.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
      1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
      1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
          Generating code
